@@ -26,8 +26,8 @@ resource "aws_instance" "web" {
   ami           = "${lookup(var.aws_amis, var.aws_region)}"
   #keyname	=  "unsecure"
 
-  # This will create 1 instance
-  count = 1
+  # This will create 5 instances
+  count = 5
 
   # Chef server
   provisioner "chef" {
