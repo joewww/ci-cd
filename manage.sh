@@ -22,11 +22,16 @@ case "$1" in
     terraform remote pull && terraform apply && terraform remote push
   ;;
 
+  show)
+    remote_config
+    terraform show
+  ;;
+
   destroy)
     remote_config
     terraform remote pull && terraform destroy -force && terraform remote push
   ;;
   *)
-    echo "Usage: $0 <plan/apply/destroy>"
+    echo "Usage: $0 <plan/apply/show/destroy>"
   exit 1
 esac
