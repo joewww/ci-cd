@@ -3,9 +3,9 @@
 remote_config() {
   terraform remote config \
     -backend=s3 \
-    -backend-config="bucket=blockchain-terraform-state" \
+    -backend-config="bucket=joewww-terraform" \
     -backend-config="key=network/terraform.tfstate" \
-    -backend-config="region=us-west-2"
+    -backend-config="region=us-east-1"
 }
 
 
