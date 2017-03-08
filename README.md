@@ -21,9 +21,10 @@ manage.sh is used to store the state of your environment remotely in an s3 bucke
 The testing of the code (using test.sh), orchestration of your ec2 instanes, and
 configuration management using chef-zero can be automated with a CI tool such as GoCD:
 
-![GoCD Pipelines](/docs/pipelines.png?raw=true)
+<img src="https://github.com/joewww/ci-cd/blob/master/docs/pipelines.png" width="600" height="440">
 
-![GoCD Pipeline configuration](/docs/pipeline-config.png?raw=true)
+<img src="https://github.com/joewww/ci-cd/blob/master/docs/pipeline-config.png" width="600" height="364">
+
 
 ## Dependencies
 
