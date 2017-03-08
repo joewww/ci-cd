@@ -5,6 +5,25 @@ This project will:
  - Deploy AWS (ec2) instances
  - Using Terraform to orchestrate and manage tfstate remotely
  - chef-zero to manage node configuration
+ - GoCD to manage CI pipeline and handle releases
+
+
+## Usage
+
+- You will need to setup an s3 bucket and an ssh keypair
+ - Update terraform/{main.tf, variables.tf} with your own key
+ - Update manage.sh with the location of your s3 bucket
+
+manage.sh is used to store the state of your environment remotely in an s3 bucket
+
+ Usage: ./manage.sh <plan/apply/show/destroy>
+
+The testing of the code (using test.sh), orchestration of your ec2 instanes, and
+configuration management using chef-zero can be automated with a CI tool such as GoCD:
+
+![GoCD Pipelines](/docs/pipelines.png?raw=true)
+
+![GoCD Pipeline configuration](/docs/pipeline-config.png?raw=true)
 
 ## Dependencies
 
@@ -15,3 +34,6 @@ This project will:
 
 - Chef
  - https://downloads.chef.io/chefdk
+
+- GoCD
+ - https://www.gocd.io/download/
