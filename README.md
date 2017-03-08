@@ -16,7 +16,9 @@ This project will:
 
 manage.sh is used to store the state of your environment remotely in an s3 bucket
 
+```bash
  Usage: ./manage.sh <plan/apply/show/destroy>
+```
 
 The testing of the code (using test.sh), orchestration of your ec2 instanes, and
 configuration management using chef-zero can be automated with a CI tool such as GoCD:
