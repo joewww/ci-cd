@@ -4,8 +4,7 @@ This project will:
 
  - Deploy AWS (ec2) instances
  - Using Terraform to orchestrate and manage tfstate remotely
- - GoCD to manage CI pipeline and handle releases
- - Chef to manage node configuration
+ - chef-zero to manage node configuration
 
 ## Dependencies
 
@@ -17,10 +16,6 @@ This project will:
 
 - GoCD
  - https://www.gocd.io/download/
- 
+
 - Chef
  - https://downloads.chef.io/chefdk
- - https://downloads.chef.io/chef-server/
-
-
-#test

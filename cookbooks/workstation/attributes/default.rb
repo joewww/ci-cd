@@ -1,1 +1,0 @@
-default[:blockchain][:devuser]  = 'dev'
