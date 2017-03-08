@@ -15,5 +15,5 @@ variable "aws_amis" {
 }
 
 variable "key_path" {
-    default = "~/unsecure-key.pem"
+    default = "../unsecure-key.pem"
 }

@@ -7,7 +7,7 @@ provider "aws" {
 resource "aws_instance" "web" {
   instance_type = "m1.small"
   ami           = "${lookup(var.aws_amis, var.aws_region)}"
-  key_name	=  "unsecure-key"
+  key_name	    = "unsecure-key"
 
   connection {
     user = "ubuntu"
@@ -19,7 +19,7 @@ resource "aws_instance" "web" {
   provisioner "remote-exec" {
     inline = [
       "sudo apt-get install git -y",
-      "cd /tmp/ && git clone https://github.com/joewww/ci-cd.git",
+      "cd /tmp/ && /usr/bin/git clone https://github.com/joewww/ci-cd.git",
       "cd /tmp/ci-cd && sudo sh chefzero.sh"
     ]
     connection {

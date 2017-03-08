@@ -12,10 +12,6 @@ This project will:
 
 - Terraform
  - https://www.terraform.io/downloads.html
- - https://www.terraform.io/docs/provisioners/chef.html
-
-- GoCD
- - https://www.gocd.io/download/
 
 - Chef
  - https://downloads.chef.io/chefdk
