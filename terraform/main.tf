@@ -18,7 +18,7 @@ resource "aws_instance" "web" {
 
   provisioner "remote-exec" {
     inline = [
-      "sudo apt-get install git -y",
+      "sudo apt-get update -y && sudo apt-get install git -y",
       "cd /tmp/ && /usr/bin/git clone https://github.com/joewww/ci-cd.git",
       "cd /tmp/ci-cd && sudo sh chefzero.sh"
     ]
