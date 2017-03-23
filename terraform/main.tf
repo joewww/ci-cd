@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "web" {
-  instance_type = "m1.small"
+  instance_type = "m1.medium"
   ami           = "${lookup(var.aws_amis, var.aws_region)}"
   key_name	    = "unsecure-key"
 
