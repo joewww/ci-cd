@@ -28,9 +28,19 @@ configuration management using chef-zero can be automated with a CI tool such as
 <img src="https://github.com/joewww/ci-cd/blob/master/docs/pipeline-config.png">
 
 
+## Notes
+
+Terraform has a chef provider available, but you cannot use it natively without a chef server:
+
+https://www.terraform.io/docs/providers/chef/index.html
+
+I did not want to run my own chef server, so I made a hack by using terraform/main.tf
+to call chefzero.sh, which then installs chef-client and runs the base cookbook recipe
+against the ec2 node.
+
 ## Dependencies
 
-* Redhat 7.3
+* CentOS 7.x
 * Terraform 0.8.8
   * https://www.terraform.io/downloads.html
 * Chef 12.19
