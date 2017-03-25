@@ -10,7 +10,7 @@ resource "aws_instance" "web" {
   key_name	    = "unsecure-key"
 
   connection {
-    user = "ec2-user"
+    user = "centos"
   }
 
   # This will create 1 instance

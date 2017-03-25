@@ -4,10 +4,10 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
-# RHEL 7.3
+# CentOS 7
 variable "aws_amis" {
   default = {
-    "us-east-1" = "ami-b63769a1"
+    "us-east-1" = "ami-6d1c2007"
   }
 }
 
