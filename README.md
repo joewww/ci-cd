@@ -30,15 +30,10 @@ configuration management using chef-zero can be automated with a CI tool such as
 
 ## Dependencies
 
-- Ubuntu 16.04
-
-- Terraform
- - https://www.terraform.io/downloads.html
-
-- Chef
- - https://downloads.chef.io/chefdk
-
-- GoCD
- - https://www.gocd.io/download/
-
-test
+* Redhat 7.3
+* Terraform 0.8.8
+  * https://www.terraform.io/downloads.html
+* Chef 12.19
+  * https://downloads.chef.io/chefdk
+* GoCD
+  * https://www.gocd.io/download/
