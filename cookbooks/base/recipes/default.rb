@@ -7,5 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package 'vim'
+yum_package 'vim-enhanced'
 
+yum_package 'epel-release'
+
+yum_package 'jq'
